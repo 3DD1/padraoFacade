@@ -1,10 +1,13 @@
-public abstract class Setor {
-    private List<Cliente> clienteComCarrinho = new ArrayList<Cliente>();
+import java.util.ArrayList;
+import java.util.List;
 
-    public void addClienteComCarrinho(Cliente cliente){
-        this.clienteComCarrinho.add(cliente);
+public abstract class Setor {
+    private List<Cliente> pedido = new ArrayList<Cliente>();
+
+    public void addPedido(Cliente cliente){
+        this.pedido.add(cliente);
     }
-    public boolean verificaCarrinhoDeCompra(Cliente cliente){
-        return this.clienteComCarrinho.contains(cliente);
+    public boolean verificaPedido(Cliente cliente){
+        return this.pedido.contains(cliente);
     }
 }

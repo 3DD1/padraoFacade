@@ -1,5 +1,5 @@
 public class Cliente {
-    public boolean formar(){
-        return ClienteFacade.verificaPendencias(this);
+    public boolean realizacaoDoPedido(){
+        return ClienteFacade.finalizarPedido(this);
     }
 }
